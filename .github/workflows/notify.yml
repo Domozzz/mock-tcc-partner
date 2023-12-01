@@ -18,3 +18,5 @@ jobs:
       if: always()
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        status: ${{ job.status }}
+        title: "deploy"
